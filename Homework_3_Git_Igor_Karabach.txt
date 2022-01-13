@@ -180,10 +180,24 @@ XML
  24. Добавить файл под гит. === git add new.xml
  25. Закоммитить файл. === git commit -m "add new.xml"
  26. Отправить файл на внешний GitHub репозиторий. === git push
- 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
- 28. Отправить изменения на внешний репозиторий.
- 29. Создать файл preferences.xml
- 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML. === vim new.xml
+ <person>
+  <name>Karabach_Igor_Andreevich</name>
+  <age>33</age>
+  <number_of_pets>0</number_of_pets>
+  <future_desired_salary>2000</future_desired_salary>
+</person>
+ 28. Отправить изменения на внешний репозиторий. === git add new.xml --> git commit -m "edit new.xml file" --> git push
+ 29. Создать файл preferences.xml === touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. === vim preferences.xml
+<preferences>
+        <favorite_film>Running Scared</favorite_film>
+        <favorite_serial>Money Heist</favorite_serial>
+        <favorite_food>pizza"</favorite_food>
+        <favorite_season>winter</favorite_season>
+        <favorite_country>USA</favorite_country>
+<preferences>
+ 
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
  32. Сделать коммит в одну строку.
  33. Отправить сразу 2 файла на внешний репозиторий.
