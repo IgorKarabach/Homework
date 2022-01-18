@@ -161,7 +161,7 @@ JSON
 
 	],
   
-	"Attachments": {img},
+	"Attachments": {"img": "bug_1.png"},
   
 	"Reporter": "Igor Karabach",
   
@@ -187,42 +187,146 @@ XML
   <number_of_pets>0</number_of_pets>
   <future_desired_salary>2000</future_desired_salary>
 </person>
+
  28. Отправить изменения на внешний репозиторий. === git add new.xml --> git commit -m "edit new.xml file" --> git push
  29. Создать файл preferences.xml === touch preferences.xml
  30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. === vim preferences.xml
 <preferences>
         <favorite_film>Running Scared</favorite_film>
         <favorite_serial>Money Heist</favorite_serial>
-        <favorite_food>pizza"</favorite_food>
+        <favorite_food>pizza</favorite_food>
         <favorite_season>winter</favorite_season>
         <favorite_country>USA</favorite_country>
-<preferences>
+</preferences>
  
- 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
- 32. Сделать коммит в одну строку.
- 33. Отправить сразу 2 файла на внешний репозиторий.
- 34. На веб интерфейсе создать файл bug_report.xml.
- 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
- 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 38. Синхронизировать внешний и локальный репозиторий XML
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML === touch sklls.xml -->
+ <skills>
+		<skill_1>JSON</skill_1>
+        <skill_2>XML</skill_2>
+        <skill_3>Postman</skill_3>
+        <skill_4>Charles</skill_4>
+        <skill_5>Fiddler</skill_5>
+        <skill_6>Dev_Tools</skill_6>
+        <skill_7>VPN</skill_7>
+        <skill_8>Mobile_Testing</skill_8>
+        <skill_9>Xcode</skill_9>
+        <skill_10>Android_Studio</skill_10>
+        <skill_11>ADB</skill_11>
+        <skill_12>Git</skill_12>
+        <skill_13>Git_Bash</skill_13>
+        <skill_14>Git_Bash</skill_14>
+        <skill_15>Git_Bash</skill_15>
+        <skill_16>Git_Bash</skill_16>
+        <skill_17>Git_Bash</skill_17>
+        <skill_18>Git_Bash</skill_18>
+ </skills>
+ 
+ 32. Сделать коммит в одну строку. === git add . && git commit -m "add 2 files"
+ 33. Отправить сразу 2 файла на внешний репозиторий. === git push
+ 34. На веб интерфейсе создать файл bug_report.xml. === press button "Add file" --> press button Create new file: "bug_report.xml" 
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  === press button "Commit changes"
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.  === press button "Edit this file" -->
+<bug_report>
+	<ID>BRST0921-184</ID>
+	<Title>Recipes come up twice in popup window by double-clicking on them in the Andriod app</Title>
+	<Type>Bug</Type>
+	<Status>To Do</Status>
+	<Priority>Minor</Priority>
+	<Resolution>Unresolved</Resolution>
+	<Environment>Samsung Galaxy A50 SM-A505F Android 11, Mobile app ver. 21.2.2</Environment>
+	<Description>
+			<Precondition>	
+				<Precondition_1>1. Open Prepear mobile app</Precondition_1>
+				<Precondition_2>2. Sign In with correct data</Precondition_2>
+			</Precondition>
+			<Steps>	
+				<Step_1>1. Click on the "Recipes" button</Step_1>
+				<Step_2>Double-click on the any Recipe image</Step_2>
+				<Step_3>Click on the "<" button</Step_3>
+				<Step_4>Double-click on the Next Recipe image</Step_4>
+				<Step_5>Click on the "<" button</Step_5>
+			</Steps>
+			<Actual_result>Recipes come up twice in the popup window by double-clicking on them in the Andriod app</Actual_result>
+			<Expected_result>One recipes should appear in a popup window after double clicking in the Andriod app</Expected_result>
+	</Description>
+	<Attachments>bug_1.png</Attachments>
+	<Reporter>Igor Karabach</Reporter>
+	<Assignee>Darya Khvahina</Assignee>
+</bug_report>
+ 
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === press button "Commit changes"
+ 38. Синхронизировать внешний и локальный репозиторий XML === git fetch --> git pull
 
 TXT
- 1. Создать внешний репозиторий c названием TXT.
- 2. Клонировать репозиторий TXT на локальный компьютер.
- 3. Внутри локального TXT создать файл “new.txt”.
- 4. Добавить файл под гит.
- 5. Закоммитить файл.
- 6. Отправить файл на внешний GitHub репозиторий.
- 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
- 8. Отправить изменения на внешний репозиторий.
- 9. Создать файл preferences.txt
- 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
- 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
- 12. Сделать коммит в одну строку.
- 13. Отправить сразу 2 файла на внешний репозиторий.
- 14. На веб интерфейсе создать файл bug_report.txt.
- 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
- 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 18. Синхронизировать внешний и локальный репозиторий TXT
+ 1. Создать внешний репозиторий c названием TXT. === https://github.com/IgorKarabach/TXT.git
+ 2. Клонировать репозиторий TXT на локальный компьютер. === git clone https://github.com/IgorKarabach/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”. === cd TXT --> touch new.txt
+ 4. Добавить файл под гит. === git add new.txt
+ 5. Закоммитить файл. === git commit -m "add new.txt file"
+ 6. Отправить файл на внешний GitHub репозиторий. === git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT. === vim new.txt
+name Karabach_Igor_Andreevich,
+age 33,
+number_of_pets 0,
+future_desired_salary 2000
+
+ 8. Отправить изменения на внешний репозиторий. === git commit -am "edit new.txt file"
+ 9. Создать файл preferences.txt === touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT. === vim preferences.txt
+favorite_film Running Scared,
+favorite_serial Money Heist,
+favorite_food pizza,
+favorite_season winter,
+favorite_country USA
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT === touch sklls.txt --> vim sklls.txt
+learned_skills:
+JSON,
+XML,
+Postman,
+Charles,
+Fiddler,
+Dev_Tools,
+VPN,
+Mobile_Testing,
+Xcode,
+Android_Studio,
+ADB,
+Git,
+Git_Bash,
+SQL,
+Postgres,
+Redis,
+Jmeter,
+Python
+
+ 12. Сделать коммит в одну строку. === git add . && git commit -m "add 2 *.txt files"
+ 13. Отправить сразу 2 файла на внешний репозиторий. === git push
+ 14. На веб интерфейсе создать файл bug_report.txt. === === press button "Add file" --> press button Create new file: "bug_report.txt"
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === press button "Commit changes"
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.  === press button "Edit this file" -->
+ID: BRST0921-184,
+Title: Recipes come up twice in popup window by double-clicking on them in the Andriod app,
+Type: Bug,
+Status: To Do,
+Priority: Minor,
+Resolution: Unresolved,
+Environment: Samsung Galaxy A50 SM-A505F Android 11, Mobile app ver. 21.2.2
+Description:
+Precondition:
+1. Open Prepear mobile app,
+2. Sign In with correct data
+Steps:
+1. Click on the "Recipes" button,
+2. Double-click on the any Recipe image,
+3. Click on the "<" button,
+4. Double-click on the Next Recipe image,
+5. Click on the "<" button,
+Actual result: Recipes come up twice in the popup window by double-clicking on them in the Andriod app
+Expected result: One recipes should appear in a popup window after double clicking in the Andriod app
+Attachments: bug_1.png,
+Reporter: Igor Karabach,
+Assignee: Darya Khvahina
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === press button "Commit changes"
+ 18. Синхронизировать внешний и локальный репозиторий TXT === git fetch --> git pull
