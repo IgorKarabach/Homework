@@ -113,7 +113,7 @@ JSON
 	
 	"Resolution": "Unresolved",
 	
-	"Environment": "Samsung Galaxy A50 SM-A505F Android 11, Mobile app ver. 21.2.2"
+	"Environment": "Samsung Galaxy A50 SM-A505F Android 11, Mobile app ver. 21.2.2",
 	
 	"Description": [
 		
@@ -133,15 +133,15 @@ JSON
   
 			"Steps": [
 	
-				"1. Click on the "Recipes" button",
+				"1. Click on the 'Recipes' button",
 		
 				"2. Double-click on the any Recipe image",
 			
-				"3. Click on the "<" button",
+				"3. Click on the '<' button",
 		
 				"4. Double-click on the Next Recipe image",
 		
-				"5. Click on the "<" button",
+				"5. Click on the '<' button"
 		
 			]
 	
@@ -201,7 +201,7 @@ XML
  
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML === touch sklls.xml -->
  <skills>
-		<skill_1>JSON</skill_1>
+	<skill_1>JSON</skill_1>
         <skill_2>XML</skill_2>
         <skill_3>Postman</skill_3>
         <skill_4>Charles</skill_4>
