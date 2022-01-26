@@ -1,0 +1,17 @@
+ID
+Title
+Type
+Status
+Priority
+Severity
+Resolution
+Environment
+Description
+Precondition
+Steps
+Postcondition
+Actual_result
+Expected_result
+Attachments
+Reporter
+Assignee
