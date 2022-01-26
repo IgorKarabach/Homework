@@ -1,0 +1,69 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+===
+git branch Postman
+git branch Jmeter
+git branch CheckLists
+git branch BagReports
+git branch SQL
+git branch Charles
+git branch MobileTesting
+
+2. Запушить все ветки на внешний репозиторий ===
+git push -u origin Postman
+git push -u origin Jmeter
+git push -u origin CheckList
+git push -u origin BagReports
+git push -u origin SQL
+git push -u origin Charles
+git push -u origin MobileTesting
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта === git checkout BagReports
+vim bug_report_structure.txt -->
+ID
+Title
+Type
+Status
+Priority
+Severity
+Resolution
+Environment
+Description
+Precondition
+Steps
+Postcondition
+Actual_result
+Expected_result
+Attachments
+Reporter
+Assignee
+
+4. Запушить структуру багрепорта на внешний репозиторий === git add bug_report_structure.txt --> 
+git commit -m "add bug_report_structure.txt file" --> 
+git push
+
+5. Вмержить ветку Bag Reports в Main === git checkout main --> git merge BagReports --> Esc --> :wq
+6. Запушить main на внешний репозиторий. === git add bug_reports_structure.txt --> git commit -m "merge from BagReports" --> git push
+7. В ветке CheckLists набросать структуру чек листа. === git checkout CheckLists --> vim checklist.txt -->
+ID
+Checking
+Result
+Comment
+
+8. Запушить структуру на внешний репозиторий === git add checklist_structure.txt --> git commit -m "add checklist_structure.txt" -->
+git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main === Click on the button "Compare & pull reqest" --> 
+base: main --> compare: CheckLists -->
+Click on the button "Create pull reqest" -->
+text into field "Leave a comment": pull reqest branch CheckLists
+Click on the button "Merge pull reqest" -->
+Click on the button "Confirm merge" -->
+10. Синхронизировать Внешнюю и Локальную ветки Main === git checkout main --> git fetch --> fit pull
