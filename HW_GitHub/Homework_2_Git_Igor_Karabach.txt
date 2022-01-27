@@ -50,7 +50,7 @@ git commit -m "add bug_report_structure.txt file" -->
 git push
 
 5. Вмержить ветку Bag Reports в Main === git checkout main --> git merge BagReports --> Esc --> :wq
-6. Запушить main на внешний репозиторий. === git add bug_reports_structure.txt --> git commit -m "merge from BagReports" --> git push
+6. Запушить main на внешний репозиторий. === git push -u origin main
 7. В ветке CheckLists набросать структуру чек листа. === git checkout CheckLists --> vim checklist.txt -->
 ID
 Checking
