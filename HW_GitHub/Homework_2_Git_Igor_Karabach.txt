@@ -66,4 +66,4 @@ Click on the button "Create pull reqest" -->
 text into field "Leave a comment": pull reqest branch CheckLists
 Click on the button "Merge pull reqest" -->
 Click on the button "Confirm merge" -->
-10. Синхронизировать Внешнюю и Локальную ветки Main === git checkout main --> git fetch --> fit pull
+10. Синхронизировать Внешнюю и Локальную ветки Main === git checkout main --> git fetch --> git pull
