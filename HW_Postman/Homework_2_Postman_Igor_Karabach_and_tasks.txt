@@ -256,13 +256,13 @@ let reqUrl_4 = pm.request.url.query.toObject();
 
 5. Проверить, что name в ответе равно name s request (name забрать из request.) ===
 pm.test("Check name from request", function () {
-    pm.expect(reqUrl_4.name).to. eql("Igor")
+    pm.expect(reqUrl_4.name).to. eql(yolochka_4.name)
 });
 Test Result: Check name from request
 
 6. Проверить, что age в ответе равно age из request (age забрать из request.) === 
 pm.test("Check age from request", function () {
-    pm.expect(+reqUrl_4.age).to.eql(33)
+    pm.expect(+reqUrl_4.age).to.eql(yolochka_4.age)
 });
 Test Result: PASS Check age from request
 
