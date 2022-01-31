@@ -114,7 +114,7 @@ u_salary_1_5_year: 4000
 
 12. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request) ===
 pm.test("u_salary_1_5_year = salary*4" , function () {
-    pm.expect(yolochka_2.family.u_salary_1_5_year).to.eql((yolochka_2.salary)*4)
+    pm.expect(yolochka_2.family.u_salary_1_5_year).to.eql(yolochka_2.salary*4)
 })
 Test Result: PASS u_salary_1_5_year = salary*4
 
@@ -299,13 +299,13 @@ Test Result: PASS Check salary [0] from response = salary from reqest
 
 13. Проверить, что 1-й элемент параметра salary равен salary*2 из request (salary забрать из request.) === 
 pm.test("Check salary [1] from response = salary*2 from reqest", function () {
-    pm.expect(+yolochka_4.salary[1]).to.eql((+reqUrl_4.salary)*2)
+    pm.expect(+yolochka_4.salary[1]).to.eql(+reqUrl_4.salary*2)
 });
 Test Result: PASS Check salary [1] from response = salary*2 from reqest
 
 14. Проверить, что 2-й элемент параметра salary равен salary*3 из request (salary забрать из request.) ===
 pm.test("Check salary [2] from response = salary*3 from reqest", function () {
-    pm.expect(+yolochka_4.salary[2]).to.eql((+reqUrl_4.salary)*3)
+    pm.expect(+yolochka_4.salary[2]).to.eql(+reqUrl_4.salary*3)
 });
 Test Result: PASS Check salary [2] from response = salary*3 from reqest
 
